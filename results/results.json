@@ -1,0 +1,148 @@
+{
+  "data": {
+    "start": "2000-01-04",
+    "end": "2026-11-17",
+    "n_days": 6070
+  },
+  "stationarity_tests": {
+    "full": {
+      "adf_p_spread": 0.0041,
+      "engle_granger_p": 0.0,
+      "half_life_days": 18.8,
+      "spread_mean": 3.66,
+      "spread_std": 6.17
+    },
+    "2000-2010": {
+      "adf_p_spread": 0.0,
+      "engle_granger_p": 0.0,
+      "half_life_days": 3.6,
+      "spread_mean": -1.28,
+      "spread_std": 2.33
+    },
+    "2011-2014": {
+      "adf_p_spread": 0.2529,
+      "engle_granger_p": 0.7612,
+      "half_life_days": 38.5,
+      "spread_mean": 12.48,
+      "spread_std": 6.94
+    },
+    "2015-2026": {
+      "adf_p_spread": 0.0,
+      "engle_granger_p": 0.0,
+      "half_life_days": 5.2,
+      "spread_mean": 4.46,
+      "spread_std": 3.85
+    }
+  },
+  "chosen_params": {
+    "lookback": 20,
+    "entry_z": 2.0,
+    "exit_z": 0.5,
+    "stop_z": 4.0,
+    "max_hold": 60
+  },
+  "in_sample_2000_2014": {
+    "net_pnl_usd": 68400.0,
+    "sharpe": 0.48,
+    "max_drawdown_usd": -20440.0,
+    "n_trades": 135,
+    "win_rate": 0.6,
+    "avg_trade_usd": 507.0,
+    "avg_hold_days": 5.7,
+    "pct_time_in_market": 0.243,
+    "total_costs_usd": 6750.0
+  },
+  "out_of_sample_2015_on": {
+    "net_pnl_usd": 37340.0,
+    "sharpe": 0.25,
+    "max_drawdown_usd": -24420.0,
+    "n_trades": 147,
+    "win_rate": 0.517,
+    "avg_trade_usd": 254.0,
+    "avg_hold_days": 5.3,
+    "pct_time_in_market": 0.266,
+    "total_costs_usd": 7350.0
+  },
+  "oos_sharpe_vs_cost_per_side": {
+    "cost_0": 0.3,
+    "cost_25": 0.25,
+    "cost_50": 0.2,
+    "cost_100": 0.1
+  },
+  "execution_lag_sensitivity": {
+    "lag_0": {
+      "is_sharpe": 1.62,
+      "oos_sharpe": 1.17
+    },
+    "lag_1": {
+      "is_sharpe": 0.48,
+      "oos_sharpe": 0.25
+    },
+    "lag_2": {
+      "is_sharpe": 0.09,
+      "oos_sharpe": 0.11
+    }
+  },
+  "naive_same_day_backtest": {
+    "params": [
+      20,
+      1.5
+    ],
+    "is": {
+      "net_pnl_usd": 408120.0,
+      "sharpe": 2.15,
+      "max_drawdown_usd": -15570.0,
+      "n_trades": 267,
+      "win_rate": 0.903,
+      "avg_trade_usd": 1529.0,
+      "avg_hold_days": 4.9,
+      "pct_time_in_market": 0.419,
+      "total_costs_usd": 13350.0
+    },
+    "oos": {
+      "net_pnl_usd": 365185.0,
+      "sharpe": 1.47,
+      "max_drawdown_usd": -18895.0,
+      "n_trades": 250,
+      "win_rate": 0.9,
+      "avg_trade_usd": 1461.0,
+      "avg_hold_days": 4.8,
+      "pct_time_in_market": 0.413,
+      "total_costs_usd": 12475.0
+    },
+    "oos_if_executed_next_day": {
+      "net_pnl_usd": 62815.0,
+      "sharpe": 0.37,
+      "max_drawdown_usd": -18555.0,
+      "n_trades": 250,
+      "win_rate": 0.564,
+      "avg_trade_usd": 251.0,
+      "avg_hold_days": 4.8,
+      "pct_time_in_market": 0.412,
+      "total_costs_usd": 12475.0
+    }
+  },
+  "lag1_autocorr_daily_spread_change": {
+    "2000-2010": -0.325,
+    "2011-2014": -0.224,
+    "2015-2026": -0.371
+  },
+  "oos_sharpe_all_grid_points": {
+    "lb20_z2.0": 0.25,
+    "lb120_z2.0": 0.29,
+    "lb120_z2.5": 0.26,
+    "lb20_z1.5": 0.37,
+    "lb40_z1.5": 0.26,
+    "lb120_z1.5": 0.3,
+    "lb60_z2.5": 0.45,
+    "lb40_z2.5": 0.08,
+    "lb60_z1.5": 0.56,
+    "lb20_z2.5": 0.28,
+    "lb60_z2.0": 0.56,
+    "lb40_z2.0": 0.18
+  },
+  "spread_max": 54.34,
+  "spread_max_date": "2020-04-20",
+  "spread_min": -22.18,
+  "spread_min_date": "2008-09-22"
+}
