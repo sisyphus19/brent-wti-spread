@@ -1,0 +1,152 @@
+{
+  "data": {
+    "start": "2015-01-05",
+    "end": "2026-11-17"
+  },
+  "regimes": {
+    "calm_2023_25": {
+      "days": 733,
+      "spread_mean": 4.13,
+      "spread_max": 8.06,
+      "spread_daily_sd_usd_bbl": 0.797,
+      "brent_ann_vol": 0.312,
+      "wti_ann_vol": 0.315,
+      "brent_wti_return_corr": 0.865,
+      "worst_1d_spread_move_usd_per_lot": 3080.0
+    },
+    "crisis_2026": {
+      "days": 179,
+      "spread_mean": 10.33,
+      "spread_max": 37.62,
+      "spread_daily_sd_usd_bbl": 3.726,
+      "brent_ann_vol": 0.781,
+      "wti_ann_vol": 0.692,
+      "brent_wti_return_corr": 0.734,
+      "worst_1d_spread_move_usd_per_lot": 22570.0
+    },
+    "crisis_tail": {
+      "calm_daily_sd_usd_per_lot": 797.0,
+      "days_beyond_4_calm_sigma": 48,
+      "days_beyond_10_calm_sigma": 7,
+      "max_move_in_calm_sigmas": 28.3,
+      "max_move_date": "2026-10-02",
+      "expected_4sigma_days_if_normal": 0.011,
+      "vol_ratio_crisis_vs_calm": 4.7
+    }
+  },
+  "var_backtest": {
+    "calm_2023_25": {
+      "days": 733,
+      "expected_breaches_per_side": 7.3,
+      "static_breaches_two_sided": 28,
+      "ewma_breaches_two_sided": 27,
+      "static_var_usd": 1854.0,
+      "ewma_var_median_usd": 1714.0,
+      "ewma_var_max_usd": 3622.0,
+      "kupiec_p_static": 0.0017,
+      "kupiec_p_ewma": 0.0035
+    },
+    "crisis_2026": {
+      "days": 179,
+      "expected_breaches_per_side": 1.8,
+      "static_breaches_two_sided": 79,
+      "ewma_breaches_two_sided": 13,
+      "static_var_usd": 1854.0,
+      "ewma_var_median_usd": 6244.0,
+      "ewma_var_max_usd": 15601.0,
+      "kupiec_p_static": 0.0,
+      "kupiec_p_ewma": 0.0001
+    }
+  },
+  "sizing": {
+    "fixed_3_lots": {
+      "2015_2025": {
+        "net_pnl_usd": 33660.0,
+        "max_drawdown_usd": -68280.0,
+        "worst_day_usd": -17025.0,
+        "best_day_usd": 21540.0,
+        "sharpe": 0.12,
+        "pnl_per_unit_worst_day": 1.98
+      },
+      "crisis_2026": {
+        "net_pnl_usd": 97350.0,
+        "max_drawdown_usd": -73260.0,
+        "worst_day_usd": -27825.0,
+        "best_day_usd": 31485.0,
+        "sharpe": 1.19,
+        "pnl_per_unit_worst_day": 3.5
+      }
+    },
+    "vol_targeted": {
+      "2015_2025": {
+        "net_pnl_usd": 18500.0,
+        "max_drawdown_usd": -52790.0,
+        "worst_day_usd": -9145.0,
+        "best_day_usd": 7380.0,
+        "sharpe": 0.11,
+        "pnl_per_unit_worst_day": 2.02
+      },
+      "crisis_2026": {
+        "net_pnl_usd": 5300.0,
+        "max_drawdown_usd": -9070.0,
+        "worst_day_usd": -5780.0,
+        "best_day_usd": 7995.0,
+        "sharpe": 0.46,
+        "pnl_per_unit_worst_day": 0.92
+      },
+      "avg_lots_crisis": 0.27,
+      "avg_lots_2015_2025": 2.13,
+      "pct_days_zero_lots_crisis": 0.737
+    }
+  },
+  "largest_crisis_spread_moves": [
+    {
+      "date": "2026-10-02",
+      "spread_move_usd_per_lot": 22570.0,
+      "brent": 135.51,
+      "wti": 97.89
+    },
+    {
+      "date": "2026-10-16",
+      "spread_move_usd_per_lot": -10520.0,
+      "brent": 119.33,
+      "wti": 108.21
+    },
+    {
+      "date": "2026-09-28",
+      "spread_move_usd_per_lot": -10180.0,
+      "brent": 119.97,
+      "wti": 99.37
+    },
+    {
+      "date": "2026-03-18",
+      "spread_move_usd_per_lot": 9590.0,
+      "brent": 118.09,
+      "wti": 96.12
+    },
+    {
+      "date": "2026-04-07",
+      "spread_move_usd_per_lot": 9250.0,
+      "brent": 138.21,
+      "wti": 114.58
+    },
+    {
+      "date": "2026-10-15",
+      "spread_move_usd_per_lot": -8570.0,
+      "brent": 126.35,
+      "wti": 104.71
+    },
+    {
+      "date": "2026-10-05",
+      "spread_move_usd_per_lot": -8240.0,
+      "brent": 125.51,
+      "wti": 96.13
+    },
+    {
+      "date": "2026-10-22",
+      "spread_move_usd_per_lot": 7700.0,
+      "brent": 125.39,
+      "wti": 104.27
+    }
+  ]
+}
