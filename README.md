@@ -35,7 +35,7 @@ Two questions about the same market, the gap between the two global crude oil be
 
 In March 2026 the Iran/Hormuz crisis pushed Dated Brent from about $71 to $138. Over the same period WTI was relatively insulated by US-specific factors: domestic supply, export-ban talk, freight costs and the risk of refinery-run cuts. The Brent–WTI spread went from a 2023–25 range of about $2–8 to $37.62 on 2 Oct 2026.
 
-This project treats the crisis as a live stress test, asked from a spread trader's point of view:
+This part treats the crisis as a live stress test, asked from a spread trader's point of view:
 1. How far outside the normal regime was it?
 2. Would a standard risk model have warned you?
 3. What happened to a mean-reversion spread book, and does volatility-targeted sizing save it?
